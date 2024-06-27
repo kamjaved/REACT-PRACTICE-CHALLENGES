@@ -1,0 +1,46 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgb(185, 185, 185);
+	font-size: 20px;
+	color: #000000;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+.active {
+	cursor: pointer;
+}
+
+.inactive {
+	background-color: #b0bec5;
+	cursor: not-allowed;
+	color: rgb(95, 95, 95);
+}
+
+.selected {
+	background-color: #66bb6a;
+}
+
+/* .box:hover.active {
+	background-color: #778877;
+} */
