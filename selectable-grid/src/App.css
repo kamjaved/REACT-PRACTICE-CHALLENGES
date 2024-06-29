@@ -1,0 +1,40 @@
+body {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.grid-container {
+	display: grid;
+	gap: 10px; /* Adjust this value for spacing between cells */
+	width: 100%; /* Adjust as necessary */
+	height: 100%; /* Adjust as necessary */
+	background-color: transparent; /* Ensure the background is transparent */
+}
+
+.grid-item {
+	height: 50px;
+	width: 50px;
+	background-color: #f0f0f0; /* Background color for cells */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	user-select: none; /* Prevent text selection */
+	border: 1px rgb(207, 207, 207) solid;
+}
+
+.grid-item::selection {
+	background: transparent; /* Removes the default Selected blue background color */
+	color: inherit; /* Keeps the original text color */
+}
+
+.selected {
+	background-color: rgb(103, 59, 204);
+	color: antiquewhite;
+}
